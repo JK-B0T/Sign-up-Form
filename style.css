@@ -1,9 +1,22 @@
+@font-face {
+    font-family: "Norse";
+    src:
+        url(./assets/fonts/norse-bold-webfont.woff2),
+        url(./assets/fonts/norse-bold-webfont.woff);
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
     appearance: none;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Norse;
+    font-size: 4em;
 }
 
 main {
@@ -16,11 +29,22 @@ aside{
     background-image: url(./assets/images/halie-west-25xggax4bSA-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
 }
 section {
     flex: 2 1 0;
-    background-color: lightblue;
+    background-color: rgb(237, 237, 237);
+    padding: 35vh 0;
 }
 form {
-    background-color: aquamarine;
+    background-color: white;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+li {
+    display: flex;
+    flex-direction: column;
 }
