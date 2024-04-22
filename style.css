@@ -5,3 +5,22 @@
     list-style: none;
     appearance: none;
 }
+
+main {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+}
+aside{
+    flex: 1.3 1 0;
+    background-image: url(./assets/images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section {
+    flex: 2 1 0;
+    background-color: lightblue;
+}
+form {
+    background-color: aquamarine;
+}
