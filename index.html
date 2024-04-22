@@ -20,37 +20,37 @@
             <p class="section-item">This is not a real service! You know something like this will help you reach your deepest dreams.<br>Sign up now to get started!</p>
             <span class="section-item">You know you want to.</span>
             <div class="form-container">
-                <form>
+                <form action="" method="post" id="sing_up_form">
                     <span>Let's do this!</span>
                     <ul>
                         <li>
-                            <label for="">FIRST NAME</label>
-                            <input type="text" id="" name="">
+                            <input type="text" id="name" name="user_name" minlength="3" maxlength="20" required>
+                            <label for="name">FIRST NAME</label>
                         </li>
                         <li>
-                            <label for="">LAST NAME</label>
-                            <input type="text" id="" name="">
+                            <input type="text" id="last_name" name="user_last_name" minlength="3" maxlength="20" required>
+                            <label for="last_name">LAST NAME</label>
                         </li>
                         <li>
-                            <label for="">EMAIL</label>
-                            <input type="text" id="" name="">
+                            <input type="email" id="email" name="user_mail" required>
+                            <label for="email">EMAIL</label>
                         </li>
                         <li>
-                            <label for="">PHONE NUMBER</label>
-                            <input type="text" id="" name="">
+                            <input type="tel" id="phone_number" name="user_phone" pattern="\d{10}|\d{3}(.| |-)\d{3}(.| |-)\d{4}">
+                            <label for="phone_number">PHONE NUMBER</label>
                         </li>
                         <li>
-                            <label for="">PASSWORD</label>
-                            <input type="text" id="" name="">
+                            <input type="password" id="pass" name="user_pass" minlength="8" required>
+                            <label for="pass">PASSWORD</label>
                         </li>
                         <li>
-                            <label for="">CONFIRM PASSWORD</label>
-                            <input type="text" id="" name="">
+                            <input type="password" id="" name="user_pass_c" minlength="8" required>
+                            <label for="pass-confirmation">CONFIRM PASSWORD</label>
                         </li>
                     </ul>
                 </form>
             </div>
-            <button type="submit" class="section-item">Create Account</button>
+            <button type="submit" form="sing_up_form" class="section-item">Create Account</button>
             <span class="section-item">Already have an account? <a href="">Log in</a></span>
         </section>
     </main>

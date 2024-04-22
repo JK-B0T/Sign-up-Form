@@ -62,7 +62,7 @@ section {
     gap: 5%;
 }
 .section-item {
-    margin-left: 5%;
+    margin: 0 5%;
 }
 .section-item:nth-child(1),
 .section-item:nth-child(2){
@@ -90,23 +90,55 @@ button.section-item {
     box-shadow: 0px 5px 3px lightgray;
 }
 .form-container ul {
-    margin-top: 4%;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 6%;
 }
 .form-container li {
     display: flex;
+    position: relative;
     flex-direction: column;
-    margin-bottom: 4%;
+    margin-bottom: 5vh;
     font-size: 0.7em;
     color: rgb(81, 81, 81);
     font-weight: bold;
+}
+.form-container label {
+    position: absolute;
+    bottom: 28px;
 }
 .form-container input {
     width: 220px;
     height: 2em;
     border: 1px solid gray;
     border-radius: 3px;
+}
+.form-container input:invalid {
+    border: 2px solid red;
+    background-color: rgb(251, 199, 199);
+    position: relative;
+}
+.form-container input:invalid:required + label::before {
+    content: "* Field Required";
+    width: 200px;
+    height: 1em;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    top: 42px;
+}
+.form-container input:invalid:focus {
+    border: 2px solid red;
+    outline: 1px solid red;
+    background-color:white;
+}
+.form-container input:valid {
+    background-color: rgb(221, 255, 221);
+}
+.form-container input:valid:focus {
+    border: 1px solid green;
+    outline: 1px solid green;
+    background-color:white;
 }
 
