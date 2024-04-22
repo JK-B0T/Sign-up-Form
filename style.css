@@ -57,12 +57,11 @@ section {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 5%;
+    justify-content: space-between;
     padding: 5% 0;
 }
 .section-item {
-    margin: 0 5%;
+    margin: 0 40px;
 }
 .section-item:nth-child(1),
 .section-item:nth-child(2){
@@ -100,7 +99,7 @@ button.section-item {
     display: flex;
     position: relative;
     flex-direction: column;
-    margin-bottom: 5vh;
+    margin-bottom: 30px;
     font-size: 0.7em;
     color: rgb(81, 81, 81);
     font-weight: bold;
@@ -126,6 +125,7 @@ button.section-item {
     height: 1em;
     color: red;
     font-weight: bold;
+    font-size: 0.8em;
     position: absolute;
     top: 42px;
 }
