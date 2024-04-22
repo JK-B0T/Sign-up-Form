@@ -114,6 +114,9 @@ button.section-item {
     border: 1px solid gray;
     border-radius: 3px;
 }
+.form-container input:focus {
+    box-shadow: 5px 5px 3px lightgray;
+}
 .form-container input:invalid {
     border: 2px solid red;
     background-color: rgb(251, 199, 199);
